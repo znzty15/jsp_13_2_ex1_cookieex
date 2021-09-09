@@ -4,15 +4,15 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>cookieset.jsp</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<%
-		Cookie cookie = new Cookie("naver","daum"); //cookie(쿠키이름,쿠키값);
-		cookie.setMaxAge(60*60*24); //cookie의 유효시간 설정 60초*60*24 = 24시간
-		response.addCookie(cookie);	//response객체 cookie탑재
+	<% // 쿠키는 사이트 당 하나만 가능
+		Cookie cookie = new Cookie("naver","daum");
+		cookie.setMaxAge(60*60*24);//쿠키의 유효시간 60초*60*24 = 24시간.
+		response.addCookie(cookie);//response 객체 cookie 탑재		
 	%>
-	<h3>cookie의 name, value, Max_age를 설정했습니다.</h3>
-	<a href="cookieget.jsp">cookie의 설정 값을 보여주는 페이지로 이동</a>
+	<h1>cookie의 name, value, Max_Age를 설정하였습니다.</h1>
+	<a href="cookieget.jsp">cookie의 설정값을 보여주는 페이지로 이동</a>
 </body>
 </html>
