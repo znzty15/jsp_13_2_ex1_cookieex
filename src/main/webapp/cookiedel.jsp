@@ -15,8 +15,8 @@
 		   String name = cookies[i].getName();
 		   String value = cookies[i].getValue();
 		   if(name.equals("naver")){ //if문을 넣지 않으면 모든 쿠키가 삭제될 수 있다!
-		   out.println("cookies["+i+"]의 Name은"+name+"<br>");
-		   out.println("cookies["+i+"]의 Value는"+value+"<br>");
+		   out.println("cookies[" + i + "]의 Name은" + name + "<br>");
+		   out.println("cookies[" + i + "]의 Value는" + value + "<br>");
 		   cookies[i].setMaxAge(0); //setMaxAge = 유효기간이기 때문에 유효기간을 짧게 설정해서 쿠키를 지운다!
 		         //naver 인덱스를 가진 값들만 모조리 삭제
 		   response.addCookie(cookies[i]);//response 객체 cookie 탑재

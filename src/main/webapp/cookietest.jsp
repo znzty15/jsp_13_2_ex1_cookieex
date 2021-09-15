@@ -15,8 +15,8 @@
 		   String name = cookies[i].getName();
 		   String value = cookies[i].getValue();
 		   
-		   out.println("cookies["+i+"]의 Name은"+name+"<br>");
-		   out.println("cookies["+i+"]의 Value는"+value+"<br>");
+		   out.println("cookies[" + i + "]의 Name은" + name + "<br>");
+		   out.println("cookies[" + i + "]의 Value는" + value + "<br>");
 		   out.println("=================================<br>");		
 		   }	
 	%>
