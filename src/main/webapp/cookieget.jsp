@@ -26,5 +26,5 @@
 		}
 	%>
 <a href="cookiedel.jsp">원하는 cookie를 삭제하는 페이지로 이동</a>
-</body>;
+</body>
 </html>
