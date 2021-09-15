@@ -13,7 +13,7 @@
 		//지우기 전에 한번 찍어주기!
 		for(int i =0;i<cookies.length;i++){
 		   String id = cookies[i].getValue();
-		   if(id.equals("abcde")){ //if문을 넣지 않으면 모든 쿠키가 삭제될 수 있다!
+		   if(id.equals("asdf")){ //if문을 넣지 않으면 모든 쿠키가 삭제될 수 있다!
 		   out.println("cookies[" + i + "]의 ID는 " + id + "<br>");
 		 //setMaxAge = 유효기간 0이기 때문에 쿠키를 바로 삭제
 		   cookies[i].setMaxAge(0);
